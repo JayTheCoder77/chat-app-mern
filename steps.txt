@@ -1,0 +1,41 @@
+1. setup backend
+📁 controllers/
+Contains the logic for handling requests.
+
+Functions here handle what happens after a request reaches a route.
+
+Example: Handling user signup, login, message sending, etc.
+
+📁 lib/ (optional)
+Stands for library. Contains reusable helper functions or modules.
+
+Example: JWT utilities, custom error handlers, database connections, etc.
+
+
+📁 middleware/
+Contains middleware functions for Express.
+
+These run before your route/controller is executed.
+
+
+📁 models/
+Contains Mongoose models (schemas) representing MongoDB collections.
+
+Used to interact with the database.
+
+📁 routes/
+Defines all API endpoints (e.g., /api/users, /api/messages).
+
+Routes usually import controllers and middleware.
+
+📁 seeds/ (optional)
+Used to seed the database with initial or test data.
+
+Helpful for development and testing.
+
+📄 index.js (or sometimes server.js)
+Entry point of your Node.js app.
+
+Sets up the server, connects to MongoDB, applies middleware, and uses routes.
+
+2. 
