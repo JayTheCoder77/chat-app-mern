@@ -7,7 +7,7 @@ export const useAuthStore = create((set) => ({
   isLoggingIn: false,
   isUpdatingProfile: false,
   isCheckingAuth: true,
-
+  onlineUsers: [],
   // check if user is authenticated or not using check function from backend folder
   checkAuth: async () => {
     try {
